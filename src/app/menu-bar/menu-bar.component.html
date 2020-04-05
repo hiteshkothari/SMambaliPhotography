@@ -1,10 +1,15 @@
 <p>menu-bar works!</p>
-<button (click)="callFunction()">submit1</button>
+<!-- <button (click)="callFunction()">submit1</button> -->
 <div class="rectangle1" onclick="callFunction()">
-    <h2>Home</h2>
+    <h2>
+        <a routerLink="Home">Home</a>
+    </h2>
 </div>
 <div class="rectangle2">
-    <h2>About Us</h2>
+    <h2>
+        <!-- About Us -->   
+        <a routerLink="AboutUs">About Us</a>
+    </h2>
 </div>
 <div class="rectangle3">
     <h2>Services</h2>

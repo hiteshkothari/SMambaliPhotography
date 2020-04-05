@@ -13,9 +13,9 @@ export class MenuBarComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  callFunction() {
-    console.log("in function");
-    this.flag = true;
+  // callFunction() {
+  //   console.log("in function");
+  //   this.flag = true;
     
-  }
+  // }
 }
