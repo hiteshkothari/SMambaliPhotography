@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output } from '@angular/core';
+import { EventEmitter } from 'protractor';
 
 @Component({
   selector: 'app-menu-bar',
@@ -7,15 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MenuBarComponent implements OnInit {
   flag = false;
-
+  // @Output() urlposition: EventEmitter<>;
   constructor() { }
 
   ngOnInit(): void {
   }
-
+  // changeURLPOSITION() {
+  //   this.
+  // }
   // callFunction() {
   //   console.log("in function");
   //   this.flag = true;
-    
+
   // }
 }

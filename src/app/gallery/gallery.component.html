@@ -1,1 +1,19 @@
-<p>gallery works!</p>
+<mat-grid-list cols="4" rowHeight="150px">
+    <mat-grid-tile
+        *ngFor="let tile of tiles"
+        [colspan]="tile.cols"
+        [rowspan]="tile.rows"
+        [style.background]="tile.color">
+      <img src="https://picsum.photos/200/300/?random">
+    </mat-grid-tile>
+  </mat-grid-list>
+
+  <mat-grid-list cols="4" rowHeight="150px">
+    <mat-grid-tile
+        *ngFor="let tile of tiles"
+        [colspan]="tile.cols"
+        [rowspan]="tile.rows"
+        [style.background]="tile.color">
+      <img src="https://picsum.photos/200/300/?random">
+    </mat-grid-tile>
+  </mat-grid-list>

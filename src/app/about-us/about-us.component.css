@@ -1,0 +1,15 @@
+.homeLogo {
+    height: 300px;
+    width: 300px;
+    padding-left: 20px;
+    float: left;
+}
+
+p {
+    color: white;
+}
+
+p.HomeDetails {
+    color: white;
+    padding-left: 50px;
+}

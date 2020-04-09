@@ -1,10 +1,21 @@
-.rightRect{
-    background-color: white;
-    height: 580px;
-    width: 1000px;
-    position: absolute;
-    right: 90px;
-    bottom: 70px;
-    border: 3px solid gray;
-    
+.homeLogo {
+    height: 300px;
+    width: 300px;
+    padding-left: 20px;
+    float: left;
 }
+
+p {
+    color: white;
+}
+
+p.HomeDetails {
+    color: white;
+    padding-left: 50px;
+}
+
+/* .rightRect{
+    background-color: white;
+    position: absolute;
+    border: 1px solid gray;
+} */

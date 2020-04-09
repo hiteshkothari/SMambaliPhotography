@@ -1,17 +1,42 @@
-<div class="scroll">
-  <p>
-    Saril Mambali Photography
-  </p>
+<Div class="navBar">
 
-  <div class="row">
-    <div class="column">
-      <app-menu-bar></app-menu-bar>
-    </div>
-    <div class="column">
-      <router-outlet></router-outlet>
-      <!-- <div class="rightRect">
-       
-      </div> -->
-    </div>
+  <div class="innerBar">
+    <button class="buttons" mat-button [matMenuTriggerFor]="aboveMenu"><a routerLink="Home">Home</a></button>
+    <mat-menu #aboveMenu="matMenu" yPosition="above">
+      <button mat-menu-item>Item 1</button>
+      <button mat-menu-item>Item 2</button>
+    </mat-menu>
+
+    <button class="buttons" mat-button [matMenuTriggerFor]="belowMenu"><a routerLink="AboutUs">About Us</a></button>
+    <mat-menu #belowMenu="matMenu" yPosition="below">
+      <button mat-menu-item>Item 1</button>
+      <button mat-menu-item>Item 2</button>
+    </mat-menu>
+
+    <button class="buttons" mat-button [matMenuTriggerFor]="beforeMenu"><a routerLink="Services">Services</a></button>
+    <mat-menu #beforeMenu="matMenu" xPosition="before">
+      <button mat-menu-item>Item 1</button>
+      <button mat-menu-item>Item 2</button>
+    </mat-menu>
+
+
+    <button class="buttons" mat-button [matMenuTriggerFor]="afterMenu"><a routerLink="Gallery">Gallery</a></button>
+    <mat-menu #afterMenu="matMenu" xPosition="after">
+      <button mat-menu-item>Item 1</button>
+      <button mat-menu-item>Item 2</button>
+    </mat-menu>
+
+    <button class="buttons" mat-button [matMenuTriggerFor]="afterMenu"><a routerLink="Contact">Contact Us</a></button>
   </div>
+</Div>
+
+<div class="column1">
+  <router-outlet></router-outlet>
 </div>
+
+<!-- <app-slider-component
+  [autoRotate]="true"
+  [autoRotateAfter]="5000"
+  [autoRotateRight]="true"
+  [images]="imagesUrl"
+></app-slider-component> -->
